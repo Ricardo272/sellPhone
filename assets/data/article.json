@@ -1,0 +1,38 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"sellphones"},
+{"type":"table","name":"article","database":"sellphones","data":
+[
+{"Nom":"IPhone 15","REF":"004","Prix":"969.00","Description":"Taille de l'écran : 6,1 pouces ","Image":"004.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":"5"},
+{"Nom":"IPhone 14 ","REF":"005","Prix":"869.00","Description":"Taille de l'écran : 6,1 pouces","Image":"005.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":null},
+{"Nom":"IPhone 13","REF":"006","Prix":"749.00","Description":"Taille de l'écran : 6,1 pouces","Image":"006.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":"2.5"},
+{"Nom":"IPhone 12","REF":"007","Prix":"549.00","Description":"Taille de l'écran : 6,1 pouces","Image":"007.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":"3"},
+{"Nom":"IPhone 11","REF":"008","Prix":"469.00","Description":"Taille de l'écran : 6,1 pouces","Image":"008.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":null},
+{"Nom":"IPhone X","REF":"009","Prix":"369.00","Description":"Taille de l'écran : 6,1 pouces","Image":"009.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Apple","Note":"2.5"},
+{"Nom":"Apple Watch série 5 ","REF":"016","Prix":"389.00","Description":"Taille de l'écran : 42mm ","Image":"016.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Apple","Note":"5"},
+{"Nom":"Apple Watch série 6","REF":"017","Prix":"429.00","Description":"Taille de l'écran : 42mm ","Image":"017.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Apple","Note":"2"},
+{"Nom":"Apple Watch série 7","REF":"018","Prix":"449.00","Description":"Taille de l'écran : 42mm ","Image":"018.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Apple","Note":"4.5"},
+{"Nom":"Apple Watch série 8","REF":"019","Prix":"489.00","Description":"Taille de l'écran : 42mm ","Image":"019.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Apple","Note":null},
+{"Nom":"iPad Pro","REF":"023","Prix":"1069.00","Description":"Taille de l'écran : 2,9 Pouces ","Image":"023.jpg","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Apple","Note":"5"},
+{"Nom":"iPad Air","REF":"024","Prix":"789.00","Description":"Taille de l'écran : 10,86 Pouces","Image":"024.jpg","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Apple","Note":"3"},
+{"Nom":"iPad 10ème génération","REF":"025","Prix":"589.00","Description":"Taille de l'écran : 10,86 Pouces","Image":"025.jpg","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Apple","Note":null},
+{"Nom":"iPad 9ème génération","REF":"026","Prix":"439.00","Description":"Taille de l'écran : 10,2 Pouces ","Image":"026.webp","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Apple","Note":null},
+{"Nom":"Samsung Galaxy S21 ","REF":"010","Prix":"300.00","Description":"Taille de l'écran : 6,2 pouces ","Image":"010.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Galaxy S20","REF":"011","Prix":"200.00","Description":"Taille de l'écran : 6,5 pouces","Image":"011.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Galaxy A40 ","REF":"012","Prix":"235.00","Description":"Taille de l'écran :  5,9 pouces","Image":"012.png","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Note 9","REF":"013","Prix":"348.00","Description":"Taille de l'écran : 6,4 pouces","Image":"013.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Galaxy ZFlip 4","REF":"014","Prix":"460.00","Description":"Taille de l'écran : 3,3 pouces sur 2,8 pouces lorsqu'il est replié.","Image":"014.webp","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":"4"},
+{"Nom":"Samsung Galaxy ZFlip 5","REF":"015","Prix":"650.00","Description":"Taille de l'écran : 6.7 pouces sur 3.4 pouces lorsqu'il est replié.","Image":"015.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Galaxy watch 6","REF":"020","Prix":"300.00","Description":"Taille de l'écran : 45mm ","Image":"020.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Samsung","Note":null},
+{"Nom":"Samsung Galaxy watch 7","REF":"021","Prix":"321.00","Description":"Taille de l'écran : 45mm","Image":"021.jpg","Stock":"En stock","Categorie d'article":"Objets Connecté","Marque":"Samsung","Note":"4"},
+{"Nom":"Samsung Galaxy watch 8","REF":"022","Prix":"429.00","Description":"Taille de l'écran : 45mm","Image":"022.jpg","Stock":"En Stock","Categorie d'article":"Objets Connecté","Marque":"Samsung","Note":null},
+{"Nom":"Galaxy Tab S9","REF":"027","Prix":"1049.00","Description":"Taille de l'écran : 11 pouces","Image":"027.jpg","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Samsung","Note":null},
+{"Nom":"Galaxy Tab S8","REF":"028","Prix":"879.00","Description":"Taille de l'écran : 10,5 pouces","Image":"028.webp","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Samsung","Note":"3.5"},
+{"Nom":"Galaxy Tab S7","REF":"029","Prix":"685.00","Description":"Taille de l'écran : 8,7 pouces","Image":"029.webp","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Samsung","Note":null},
+{"Nom":"Galaxy Tab A8","REF":"030","Prix":"329.00","Description":"Taille de l'écran :  10,5 pouces ","Image":"030.jpg","Stock":"En stock","Categorie d'article":"Tablettes","Marque":"Samsung","Note":null},
+{"Nom":"Wiko Sunny","REF":"001","Prix":"99.00","Description":"Taille Ecran : 6,2 pouces","Image":"001.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Wiko","Note":"1.75"},
+{"Nom":"Wiko View5","REF":"002","Prix":"301.00","Description":"Taille de l'écran : 6.55 pouces","Image":"002.jpg","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Wiko","Note":null},
+{"Nom":"Wiko Lenny4 ","REF":"003","Prix":"98.00","Description":"Taille de l'écran : 6.3 pouces","Image":"003.webp","Stock":"En stock","Categorie d'article":"Téléphones Portables","Marque":"Wiko","Note":"0"}
+]
+}
+]
