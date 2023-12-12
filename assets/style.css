@@ -1,15 +1,24 @@
+body {
+  background-color: black;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
   top: 0px;
   background-color: #666666;
-  height: 32px;
+  height: 13rem;
   text-align: right;
+  display: flex;
 }
 
-.navButtons {
-  display: inline;
+.navlinks {
+  display: flex;
   justify-content: center;
+  color: white;
+  margin-top: 13rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(77, 4, 4) 17%, rgb(9, 9, 121) 62%);
 }
 
 #logo {
@@ -18,6 +27,14 @@
   background-color: silver;
 }
 
-body {
-  background-color: black;
+#searchbar {
+  height: 1rem;
+  margin: auto;
+  border-radius: 25%;
+  width: 15rem;
+}
+
+#btnSearch {
+  background-color: green;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
