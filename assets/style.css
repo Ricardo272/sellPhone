@@ -1,0 +1,23 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: #666666;
+  height: 32px;
+  text-align: right;
+}
+
+.navButtons {
+  display: inline;
+  justify-content: center;
+}
+
+#logo {
+  width: 5rem;
+  height: 7rem;
+  background-color: silver;
+}
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
