@@ -11,7 +11,7 @@ fetch('../assets/data/data.json')
     for (let i = 0; i < globalData.length; i++) {
 article.innerHTML += `
 
-<img src="${cheminImgArticle}${globalData[i].Image}" alt="${globalData[i].Nom}">
+<img src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
 
 `
 
