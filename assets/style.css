@@ -37,4 +37,9 @@ body {
 #btnSearch {
   background-color: green;
   color: white;
+}
+
+#article img {
+  width: 4rem;
+  height: 4rem;
 }/*# sourceMappingURL=style.css.map */
