@@ -63,13 +63,14 @@ body {
     font-family: sans-serif;
     margin-top: 80px;
     padding: 30px;
+    font-size: 1.5rem;
 
     header * {
         display: inline;
     }
 
     header {
-        background-color: white;
+        background-color: #EEF1EF;
         position: fixed;
         top: 0;
         left: 0;
@@ -78,19 +79,59 @@ body {
         display: flex;
         align-items: center;
         box-shadow: 0 0 25px 0 black;
+        height: fit-content;
 
         img {
-            height: 80px;
-            margin-left: 40px;
+            height: 6rem;
+            margin-left: 2.5rem;
         }
 
         nav {
             li {
-                margin: 20px;
+                margin: 1.5;
 
                 a {
+                    padding: .5rem;
                     color: black;
                     text-decoration: none;
+                    border-radius: 1rem;
+
+                }
+
+                a:hover {
+                    background-color: #5E6572;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+
+            .navbar {
+                font-size: 2rem;
+
+                #searchbar {
+                    font-size: 2rem;
+                    width: 20rem;
+                    height: fit-content;
+                    border: none;
+                    border-radius: 1rem;
+                    padding: .2rem;
+
+                }
+
+
+                #btnSearch {
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                    border: none;
+                    padding: .3rem;
+                    border-radius: 1rem;
+                    height: fit-content;
+                }
+
+                #btnSearch:hover {
+                    background-color: #5E6572;
+                    cursor: pointer;
+                    color: white;
                 }
             }
         }
@@ -101,7 +142,7 @@ body {
     }
 
     footer {
-        background-color: white;
+        background-color: #EEF1EF;
         position: relative;
         top: end;
         left: 0;
