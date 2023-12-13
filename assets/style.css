@@ -97,8 +97,7 @@ main {
   color: white;
 }
 
-#article img, #telephones img, #telephones img, #objetsconnectes img, #tablettes img {
-#article img {
+#article #article img, #telephones #article img, #telephones #article img, #objetsconnectes #article img, #tablettes #article img {
   width: 4rem;
   height: 4rem;
 }/*# sourceMappingURL=style.css.map */
