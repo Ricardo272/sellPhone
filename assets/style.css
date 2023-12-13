@@ -1,40 +1,62 @@
 body {
-  background-color: black;
+  height: 125vh;
+  background-image: url("https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 80px;
+  padding: 30px;
 }
-
-.navbar {
+body header * {
+  display: inline;
+}
+body header {
+  background-color: white;
   position: fixed;
-  width: 100%;
-  top: 0px;
-  background-color: #666666;
-  height: 13rem;
-  text-align: right;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
   display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
 }
-
-.navlinks {
+body header img {
+  height: 80px;
+  margin-left: 40px;
+}
+body header nav li {
+  margin: 20px;
+}
+body header nav li a {
+  color: black;
+  text-decoration: none;
+}
+body footer * {
+  display: inline;
+}
+body footer {
+  background-color: white;
+  position: relative;
+  top: end;
+  left: 0;
+  right: 0;
+  height: 80px;
   display: flex;
-  justify-content: center;
-  color: white;
-  margin-top: 13rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(77, 4, 4) 17%, rgb(9, 9, 121) 62%);
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+}
+body footer img {
+  height: 80px;
+  margin-left: 40px;
+}
+body footer nav li {
+  margin: 20px;
+}
+body footer nav li a {
+  color: black;
+  text-decoration: none;
 }
 
-#logo {
-  width: 5rem;
-  height: 7rem;
-  background-color: silver;
-}
-
-#searchbar {
-  height: 1rem;
-  margin: auto;
-  border-radius: 25%;
-  width: 15rem;
-}
-
-#btnSearch {
-  background-color: green;
+main {
   color: white;
 }/*# sourceMappingURL=style.css.map */

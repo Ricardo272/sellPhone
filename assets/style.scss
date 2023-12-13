@@ -1,44 +1,134 @@
+// body {
+//     background-color: #A9B4C2;
+
+//     header {
+//         display: inline-flex;
+//         align-items: center;
+//         height: 7rem;
+//         border: none;
+//         background-color: #EEF1EF;
+//         width: 100%;
+//         justify-content: center;
+
+//         #logo {
+//             margin: 1rem;
+//             width: fit-content;
+
+//             img {
+//                 width: 6rem;
+//             }
+
+//         }
+
+//         .navbar {
+//             font-size: 2rem;
+//             display: flex;
+
+//             #searchbar {
+//                 font-size: 2rem;
+//                 width: 20rem;
+//                 height: fit-content;
+//                 border: none;
+//                 background-color: whitesmoke;
+//                 border-radius: 1rem;
+//                 padding: .2rem;
+
+//             }
+//         }
+
+//         #btnSearch {
+//             font-size: 1.5rem;
+//             margin-left: 1rem;
+//             border: none;
+//             padding: .3rem;
+//             background-color: whitesmoke;
+//             border-radius: 1rem;
+//             height: fit-content;
+//         }
+
+//         #btnSearch:hover {
+//             background-color: #5E6572;
+//             cursor: pointer;
+//             color: white;
+//         }
+
+
+//     }
+// }
+
 body {
-    background-color: black;
-}
-.navbar {
-    position:fixed;
-        width: 100%;
-        top:0px;
-        background-color: #666666;
-        height: 13rem;
-        text-align: right;
+    height: 125vh;
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+
+    header * {
+        display: inline;
+    }
+
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
         display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black;
+
+        img {
+            height: 80px;
+            margin-left: 40px;
         }
 
+        nav {
+            li {
+                margin: 20px;
 
-.navlinks {
-display: flex;
-justify-content: center;
-color: white;
-margin-top: 13rem;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(77,4,4,1) 17%, rgba(9,9,121,1) 62%);
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 
+    footer * {
+        display: inline;
+    }
+
+    footer {
+        background-color: white;
+        position: relative;
+        top: end;
+        left: 0;
+        right: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black;
+
+        img {
+            height: 80px;
+            margin-left: 40px;
+        }
+
+        nav {
+            li {
+                margin: 20px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
-
-
-
-#logo {
-    width: 5rem;
-    height: 7rem;
-    background-color: silver;
-}
-
-#searchbar {
-    height: 1rem;
-    margin: auto;
-    border-radius: 25%;
-    width: 15rem;
-}
-
-#btnSearch {
-    background-color: green;
+main {
     color: white;
 }
