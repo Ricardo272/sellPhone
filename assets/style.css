@@ -23,9 +23,14 @@ body header {
   height: -moz-fit-content;
   height: fit-content;
 }
-body header img {
-  height: 6rem;
+body header #logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+body header #logo .logo {
   margin-left: 2.5rem;
+  height: 7rem;
 }
 body header nav li {
   margin: 1.5;
@@ -67,34 +72,25 @@ body header nav .navbar #btnSearch:hover {
   cursor: pointer;
   color: white;
 }
-body footer * {
-  display: inline;
-}
 body footer {
   background-color: #EEF1EF;
-  position: relative;
-  top: end;
-  left: 0;
-  right: 0;
-  height: 80px;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: 0 0 1.2rem 0 black;
+}
+body footer nav ul {
   display: flex;
-  align-items: center;
-  box-shadow: 0 0 25px 0 black;
 }
-body footer img {
-  height: 80px;
-  margin-left: 40px;
+body footer nav ul img {
+  height: 7rem;
 }
-body footer nav li {
-  margin: 20px;
+body footer nav ul li {
+  margin: 1.5rem;
 }
-body footer nav li a {
+body footer nav ul li a {
+  width: 2rem;
   color: black;
   text-decoration: none;
-}
-
-main {
-  color: white;
 }
 
 #article img {
