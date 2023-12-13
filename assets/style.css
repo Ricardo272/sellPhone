@@ -61,7 +61,7 @@ main {
   color: white;
 }
 
-#article img {
+#article img, #telephones img, #telephones img, #objetsconnectes img, #tablettes img {
   width: 4rem;
   height: 4rem;
 }/*# sourceMappingURL=style.css.map */
