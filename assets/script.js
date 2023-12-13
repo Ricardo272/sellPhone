@@ -3,7 +3,7 @@ let article = document.getElementById('article')
 let globalData
 
 
-fetch('../assets/data/article.json')
+fetch('../assets/data/data.json')
 .then((res) => res.json())
   .then((jsonData) => {
     globalData = jsonData; 
