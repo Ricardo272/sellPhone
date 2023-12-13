@@ -5,12 +5,13 @@ body {
   font-family: sans-serif;
   margin-top: 80px;
   padding: 30px;
+  font-size: 1.5rem;
 }
 body header * {
   display: inline;
 }
 body header {
-  background-color: white;
+  background-color: #EEF1EF;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,23 +20,58 @@ body header {
   display: flex;
   align-items: center;
   box-shadow: 0 0 25px 0 black;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body header img {
-  height: 80px;
-  margin-left: 40px;
+  height: 6rem;
+  margin-left: 2.5rem;
 }
 body header nav li {
-  margin: 20px;
+  margin: 1.5;
 }
 body header nav li a {
+  padding: 0.5rem;
   color: black;
   text-decoration: none;
+  border-radius: 1rem;
+}
+body header nav li a:hover {
+  background-color: #5E6572;
+  cursor: pointer;
+  color: white;
+}
+body header nav .navbar {
+  font-size: 2rem;
+}
+body header nav .navbar #searchbar {
+  font-size: 2rem;
+  width: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.2rem;
+}
+body header nav .navbar #btnSearch {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body header nav .navbar #btnSearch:hover {
+  background-color: #5E6572;
+  cursor: pointer;
+  color: white;
 }
 body footer * {
   display: inline;
 }
 body footer {
-  background-color: white;
+  background-color: #EEF1EF;
   position: relative;
   top: end;
   left: 0;
