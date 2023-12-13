@@ -58,7 +58,6 @@
 
 body {
     height: 125vh;
-    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
     background-size: cover;
     font-family: sans-serif;
     margin-top: 80px;
@@ -157,31 +156,101 @@ body {
         }
     }
 
-    #article {
+    #card {
+        padding: 1rem;
+        border-radius: 2rem;
+
+        width: 22.2rem;
+        display: flex;
+        border: none;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 15px 10px 7px black;
+        margin: 1.5rem;
+
+
         img {
-            width: 4rem;
-            height: 4rem;
+            padding: 1rem;
+            width: 15rem;
+            border: #EEF1EF;
         }
+
+        #marque {
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            padding: .4rem;
+            margin: .2rem;
+            text-shadow: 0 3px 3px #1c2321;
+        }
+
+        #nomArticle {
+            margin: .8rem;
+            text-shadow: 0 3px 3px #1c2321;
+        }
+
+        #prix {
+            text-shadow: 0 1px 2px #1c2321;
+            margin: .2rem;
+        }
+
+        #description {
+            text-shadow: 0 1px 2px #1c2321;
+            margin: .5rem;
+        }
+
+        .enSavoirPlus {
+            text-decoration: none;
+            color: black;
+            align-self: flex-end;
+            border-radius: 1rem;
+            padding: .4rem;
+            text-shadow: 0 1px 2px #1c2321;
+
+        }
+
+        .enSavoirPlus:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #article {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+
+
+        img {
+            padding: 1rem;
+            width: 15rem;
+            border: #EEF1EF;
+        }
+
     }
 
     #telephones {
         img {
-            width: 4rem;
-            height: 4rem;
+            padding: 1rem;
+            width: 15rem;
+            border: #EEF1EF;
         }
     }
 
     #objetsconnectes {
         img {
-            width: 4rem;
-            height: 4rem;
+            padding: 1rem;
+            width: 15rem;
+            border: #EEF1EF;
         }
     }
 
     #tablettes {
         img {
-            width: 4rem;
-            height: 4rem;
+            padding: 1rem;
+            width: 15rem;
+            border: #EEF1EF;
         }
     }
 
