@@ -72,6 +72,22 @@ body header nav .navbar #btnSearch:hover {
   cursor: pointer;
   color: white;
 }
+body #article img {
+  width: 4rem;
+  height: 4rem;
+}
+body #telephones img {
+  width: 4rem;
+  height: 4rem;
+}
+body #objetsconnectes img {
+  width: 4rem;
+  height: 4rem;
+}
+body #tablettes img {
+  width: 4rem;
+  height: 4rem;
+}
 body footer {
   background-color: #EEF1EF;
   height: -moz-fit-content;
@@ -91,13 +107,4 @@ body footer nav ul li a {
   width: 2rem;
   color: black;
   text-decoration: none;
-}
-
-main {
-  color: white;
-}
-
-#article #article img, #telephones #article img, #telephones #article img, #objetsconnectes #article img, #tablettes #article img {
-  width: 4rem;
-  height: 4rem;
 }/*# sourceMappingURL=style.css.map */

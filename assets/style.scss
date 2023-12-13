@@ -144,7 +144,33 @@ body {
         }
     }
 
+    #article {
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
 
+    #telephones {
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    #objetsconnectes {
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    #tablettes {
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
 
     footer {
         background-color: #EEF1EF;
@@ -174,19 +200,4 @@ body {
             }
         }
     }
-}
-
-main {
-    color: white;
-}
-
-#article, #telephones, #telephones, #objetsconnectes, #tablettes {
-#article {
-
-
-    img {
-        width: 4rem;
-        height: 4rem;
-    }
-}
 }
