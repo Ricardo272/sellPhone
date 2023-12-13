@@ -16,12 +16,13 @@ body header {
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
   display: flex;
-  align-items: center;
   box-shadow: 0 0 25px 0 black;
   height: -moz-fit-content;
   height: fit-content;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 body header #logo {
   width: -moz-fit-content;
@@ -32,24 +33,40 @@ body header #logo .logo {
   margin-left: 2.5rem;
   height: 7rem;
 }
-body header nav li {
-  margin: 1.5;
+body header .navlinks {
+  flex-direction: row-reverse;
 }
-body header nav li a {
+body header .navlinks li {
+  margin: 1.5;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body header .navlinks li a {
+  margin: 1rem;
   padding: 0.5rem;
   color: black;
   text-decoration: none;
   border-radius: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-body header nav li a:hover {
+body header .navlinks li a:hover {
   background-color: #5E6572;
   cursor: pointer;
   color: white;
 }
-body header nav .navbar {
-  font-size: 2rem;
+body header .navbar {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2rem;
 }
-body header nav .navbar #searchbar {
+body header .navbar #searchbar {
   font-size: 2rem;
   width: 20rem;
   height: -moz-fit-content;
@@ -58,16 +75,15 @@ body header nav .navbar #searchbar {
   border-radius: 1rem;
   padding: 0.2rem;
 }
-body header nav .navbar #btnSearch {
+body header .navbar #btnSearch {
   font-size: 1.5rem;
-  margin-left: 1rem;
   border: none;
   padding: 0.3rem;
   border-radius: 1rem;
   height: -moz-fit-content;
   height: fit-content;
 }
-body header nav .navbar #btnSearch:hover {
+body header .navbar #btnSearch:hover {
   background-color: #5E6572;
   cursor: pointer;
   color: white;
@@ -88,6 +104,9 @@ body #tablettes img {
   width: 4rem;
   height: 4rem;
 }
+body footer * {
+  display: inline;
+}
 body footer {
   background-color: #EEF1EF;
   height: -moz-fit-content;
@@ -96,12 +115,15 @@ body footer {
 }
 body footer nav ul {
   display: flex;
+  justify-content: center;
 }
 body footer nav ul img {
   height: 7rem;
 }
 body footer nav ul li {
   margin: 1.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body footer nav ul li a {
   width: 2rem;
