@@ -1,5 +1,38 @@
 [
     {
+        "nom": "Wiko Sunny",
+        "ref": "001",
+        "prix": "99.00",
+        "description": "Taille Ecran : 6,2 pouces",
+        "image": "001.jpg",
+        "stock": "En stock",
+        "catArticle": "Téléphones Portables",
+        "marque": "Wiko",
+        "note": "2"
+    },
+    {
+        "nom": "Wiko View5",
+        "ref": "002",
+        "prix": "301.00",
+        "description": "Taille de l'écran : 6.55 pouces",
+        "image": "002.jpg",
+        "stock": "En stock",
+        "catArticle": "Téléphones Portables",
+        "marque": "Wiko",
+        "note": null
+    },
+    {
+        "nom": "Wiko Lenny4 ",
+        "ref": "003",
+        "prix": "98.00",
+        "description": "Taille de l'écran : 6.3 pouces",
+        "image": "003.webp",
+        "stock": "En stock",
+        "catArticle": "Téléphones Portables",
+        "marque": "Wiko",
+        "note": "0"
+    },
+    {
         "nom": "IPhone 15",
         "ref": "004",
         "prix": "969.00",
@@ -19,7 +52,7 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Apple",
-        "note": null
+        "note": "2"
     },
     {
         "nom": "IPhone 13",
@@ -63,95 +96,7 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Apple",
-        "note": "2.5"
-    },
-    {
-        "nom": "Apple Watch série 5 ",
-        "ref": "016",
-        "prix": "389.00",
-        "description": "Taille de l'écran : 42mm ",
-        "image": "016.jpg",
-        "stock": "En stock",
-        "catArticle": "Objets Connecté",
-        "marque": "Apple",
-        "note": "5"
-    },
-    {
-        "nom": "Apple Watch série 6",
-        "ref": "017",
-        "prix": "429.00",
-        "description": "Taille de l'écran : 42mm ",
-        "image": "017.jpg",
-        "stock": "En stock",
-        "catArticle": "Objets Connecté",
-        "marque": "Apple",
-        "note": "2"
-    },
-    {
-        "nom": "Apple Watch série 7",
-        "ref": "018",
-        "prix": "449.00",
-        "description": "Taille de l'écran : 42mm ",
-        "image": "018.jpeg",
-        "stock": "En stock",
-        "catArticle": "Objets Connecté",
-        "marque": "Apple",
-        "note": "4.5"
-    },
-    {
-        "nom": "Apple Watch série 8",
-        "ref": "019",
-        "prix": "489.00",
-        "description": "Taille de l'écran : 42mm ",
-        "image": "019.jpg",
-        "stock": "En stock",
-        "catArticle": "Objets Connecté",
-        "marque": "Apple",
-        "note": null
-    },
-    {
-        "nom": "iPad Pro",
-        "ref": "023",
-        "prix": "1069.00",
-        "description": "Taille de l'écran : 2,9 Pouces ",
-        "image": "023.jpg",
-        "stock": "En stock",
-        "catArticle": "Tablettes",
-        "marque": "Apple",
-        "note": "5"
-    },
-    {
-        "nom": "iPad Air",
-        "ref": "024",
-        "prix": "789.00",
-        "description": "Taille de l'écran : 10,86 Pouces",
-        "image": "024.jpg",
-        "stock": "En stock",
-        "catArticle": "Tablettes",
-        "marque": "Apple",
         "note": "3"
-    },
-    {
-        "nom": "iPad 10ème génération",
-        "ref": "025",
-        "prix": "589.00",
-        "description": "Taille de l'écran : 10,86 Pouces",
-        "image": "025.jpg",
-        "stock": "En stock",
-        "catArticle": "Tablettes",
-        "marque": "Apple",
-        "note": null
-    },
-    {
-        "nom": "iPad 9ème génération",
-        "ref": "026",
-        "prix": "439.00",
-        "description": "Taille de l'écran : 10,2 Pouces ",
-        "image": "026.webp",
-        "stock": "En stock",
-        "catArticle": "Tablettes",
-        "marque": "Apple",
-        "note": null
     },
     {
         "nom": "Samsung Galaxy S21 ",
@@ -162,7 +107,7 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Samsung",
-        "note": null
+        "note": "5"
     },
     {
         "nom": "Samsung Galaxy S20",
@@ -173,7 +118,7 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Samsung",
-        "note": null
+        "note": "3"
     },
     {
         "nom": "Samsung Galaxy A40 ",
@@ -206,7 +151,7 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Samsung",
-        "note": "4"
+        "note": "4.25"
     },
     {
         "nom": "Samsung Galaxy ZFlip 5",
@@ -217,6 +162,50 @@
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
         "marque": "Samsung",
+        "note": null
+    },
+    {
+        "nom": "Apple Watch série 5 ",
+        "ref": "016",
+        "prix": "389.00",
+        "description": "Taille de l'écran : 42mm ",
+        "image": "016.jpg",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Apple",
+        "note": "5"
+    },
+    {
+        "nom": "Apple Watch série 6",
+        "ref": "017",
+        "prix": "429.00",
+        "description": "Taille de l'écran : 42mm ",
+        "image": "017.jpg",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Apple",
+        "note": "2"
+    },
+    {
+        "nom": "Apple Watch série 7",
+        "ref": "018",
+        "prix": "449.00",
+        "description": "Taille de l'écran : 42mm ",
+        "image": "018.jpg",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Apple",
+        "note": "5"
+    },
+    {
+        "nom": "Apple Watch série 8",
+        "ref": "019",
+        "prix": "489.00",
+        "description": "Taille de l'écran : 42mm ",
+        "image": "019.jpg",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Apple",
         "note": null
     },
     {
@@ -253,6 +242,50 @@
         "note": null
     },
     {
+        "nom": "iPad Pro",
+        "ref": "023",
+        "prix": "1069.00",
+        "description": "Taille de l'écran : 2,9 Pouces ",
+        "image": "023.jpg",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Apple",
+        "note": "5"
+    },
+    {
+        "nom": "iPad Air",
+        "ref": "024",
+        "prix": "789.00",
+        "description": "Taille de l'écran : 10,86 Pouces",
+        "image": "024.jpg",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Apple",
+        "note": "3.5"
+    },
+    {
+        "nom": "iPad 10ème génération",
+        "ref": "025",
+        "prix": "589.00",
+        "description": "Taille de l'écran : 10,86 Pouces",
+        "image": "025.jpg",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Apple",
+        "note": null
+    },
+    {
+        "nom": "iPad 9ème génération",
+        "ref": "026",
+        "prix": "439.00",
+        "description": "Taille de l'écran : 10,2 Pouces ",
+        "image": "026.webp",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Apple",
+        "note": null
+    },
+    {
         "nom": "Galaxy Tab S9",
         "ref": "027",
         "prix": "1049.00",
@@ -261,7 +294,7 @@
         "stock": "En stock",
         "catArticle": "Tablettes",
         "marque": "Samsung",
-        "note": null
+        "note": "4"
     },
     {
         "nom": "Galaxy Tab S8",
@@ -272,7 +305,7 @@
         "stock": "En stock",
         "catArticle": "Tablettes",
         "marque": "Samsung",
-        "note": "3.5"
+        "note": "4"
     },
     {
         "nom": "Galaxy Tab S7",
@@ -297,36 +330,91 @@
         "note": null
     },
     {
-        "nom": "Wiko Sunny",
-        "ref": "001",
-        "prix": "99.00",
-        "description": "Taille Ecran : 6,2 pouces",
-        "image": "001.jpg",
+        "nom": "Huawei P30 Lite - 128 Go ",
+        "ref": "031",
+        "prix": "110.00",
+        "description": "P30 Lite - 6,15'' FHD+ - 4G+ - Android 9.0 - Lecteur d'empreintes digitales",
+        "image": "031.png",
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
-        "marque": "Wiko",
-        "note": "1.75"
+        "marque": "Huawei",
+        "note": "4"
     },
     {
-        "nom": "Wiko View5",
-        "ref": "002",
-        "prix": "301.00",
-        "description": "Taille de l'écran : 6.55 pouces",
-        "image": "002.jpg",
+        "nom": "HUAWEI P40 Lite - 128 Go",
+        "ref": "032",
+        "prix": "101.99",
+        "description": "Smartphone 6,4\"\" FHD+ FullView - Huawei AppGallery (Services Google non intégrés) - 4G - Kirin 810 - RAM 6 Go - Caméra 48MP - 4200mAh - SuperCharge 40W - EMUI 10",
+        "image": "032.png",
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
-        "marque": "Wiko",
-        "note": null
+        "marque": "Huawei",
+        "note": "4.5"
     },
     {
-        "nom": "Wiko Lenny4 ",
-        "ref": "003",
-        "prix": "98.00",
-        "description": "Taille de l'écran : 6.3 pouces",
-        "image": "003.webp",
+        "nom": "HUAWEI P Smart 2021 - 128 Go",
+        "ref": "033",
+        "prix": "276.10",
+        "description": "Smartphone 6.67\"\" FHD+ - Kirin 710A - RAM 4 Go - Huawei AppGallery (Services Google non intégrés) - 5000 mAh - Caméra 48MP",
+        "image": "033.png",
         "stock": "En stock",
         "catArticle": "Téléphones Portables",
-        "marque": "Wiko",
+        "marque": "Huawei",
+        "note": "2"
+    },
+    {
+        "nom": "HUAWEI Mate 30 Pro - 256 Go",
+        "ref": "034",
+        "prix": "968.99",
+        "description": "Smartphone 6,53\"\" OLED Horizon FHD+ - Kirin 990 - RAM 8 Go - Quadruple Caméra Leica - 4500 mAh - IP68 - Huawei AppGallery (Services Google non intégrés) - EMUI10",
+        "image": "034.png",
+        "stock": "En stock",
+        "catArticle": "Téléphones Portables",
+        "marque": "Huawei",
+        "note": "4.5"
+    },
+    {
+        "nom": "Huawei MediaPad T5",
+        "ref": "035",
+        "prix": "355.30",
+        "description": "MediaPad T5 10\" Wifi 3+32GB Gold",
+        "image": "035.png",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Huawei",
+        "note": "5"
+    },
+    {
+        "nom": "Huawei MatePad ",
+        "ref": "036",
+        "prix": "292.89",
+        "description": "Tablette Tactile 10,4\"Réseau 4G \/ LTEAndroid 10.0Résolution 1200 x 2000 pixelsProcesseur Octa-core (2x2.27 GHz Cortex-A76 et 6x1.88 GHz Cortex-A55)Mémoire Interne de 64 Go, Extensible avec carte microSD",
+        "image": "036.png",
+        "stock": "En stock",
+        "catArticle": "Tablettes",
+        "marque": "Huawei",
+        "note": "2.5"
+    },
+    {
+        "nom": "HUAWEI Watch GT 2 Pro Sport",
+        "ref": "037",
+        "prix": "265.15",
+        "description": "Montre connectée - Matériaux et finitions haut de gamme - Jusqu'à 2 semaines d'autonomie - 100 modes de sport disponibles - Appels en Bluetooth",
+        "image": "037.png",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Huawei",
+        "note": "3.5"
+    },
+    {
+        "nom": "HUAWEI Watch GT Active - Orange",
+        "ref": "038",
+        "prix": "311.27",
+        "description": "Montre Connectée - GPS - Cardiofréquencemètre - Autonomie moy. 2 sem. - Compatible Android et iOS",
+        "image": "038.png",
+        "stock": "En stock",
+        "catArticle": "Objets Connecté",
+        "marque": "Huawei",
         "note": "0"
     }
 ]
