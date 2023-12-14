@@ -3,14 +3,12 @@ body {
   font-family: sans-serif;
   font-size: 1.5rem;
 }
-
 body header * {
   display: inline;
 }
-
 body header {
   background-color: #EEF1EF;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -21,23 +19,21 @@ body header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  border: none;
+  border-radius: 2rem;
 }
-
 body header #logo {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
 }
-
 body header #logo .logo {
   margin-left: 2.5rem;
   height: 7rem;
 }
-
 body header .navlinks {
   flex-direction: row-reverse;
 }
-
 body header .navlinks li {
   margin: 1.5;
   width: -moz-fit-content;
@@ -45,7 +41,6 @@ body header .navlinks li {
   height: -moz-fit-content;
   height: fit-content;
 }
-
 body header .navlinks li a {
   margin: 1rem;
   padding: 0.5rem;
@@ -57,13 +52,11 @@ body header .navlinks li a {
   height: -moz-fit-content;
   height: fit-content;
 }
-
 body header .navlinks li a:hover {
-  background-color: #5E6572;
+  background-color: #000000;
   cursor: pointer;
   color: white;
 }
-
 body header .navbar {
   width: -moz-fit-content;
   width: fit-content;
@@ -71,7 +64,6 @@ body header .navbar {
   height: fit-content;
   margin: 2rem;
 }
-
 body header .navbar #searchbar {
   font-size: 2rem;
   width: 20rem;
@@ -81,7 +73,6 @@ body header .navbar #searchbar {
   border-radius: 1rem;
   padding: 0.2rem;
 }
-
 body header .navbar #btnSearch {
   font-size: 1.5rem;
   border: none;
@@ -90,34 +81,34 @@ body header .navbar #btnSearch {
   height: -moz-fit-content;
   height: fit-content;
 }
-
 body header .navbar #btnSearch:hover {
-  background-color: #5E6572;
+  background-color: #000000;
   cursor: pointer;
   color: white;
 }
-
+body #card:hover {
+  transform: translateY(-10px);
+}
 body #card {
+  width: 16rem;
+  height: 40rem;
   padding: 1rem;
   border-radius: 2rem;
-  width: 22.2rem;
   display: flex;
   border: none;
   flex-direction: column;
-  height: -moz-fit-content;
-  height: fit-content;
   align-items: center;
   background-color: #ffffff;
   box-shadow: 15px 10px 7px black;
   margin: 1.5rem;
+  transition: transform 0.5s ease;
+  justify-content: space-between;
 }
-
-body #card img {
+body #card #photoArticle {
   padding: 1rem;
-  width: 15rem;
-  border: #EEF1EF;
+  width: 10rem;
+  height: 16rem;
 }
-
 body #card #marque {
   font-size: 1.5rem;
   border-radius: 1rem;
@@ -125,23 +116,33 @@ body #card #marque {
   margin: 0.2rem;
   text-shadow: 0 3px 3px #1c2321;
 }
-
 body #card #nomArticle {
   margin: 0.8rem;
   text-shadow: 0 3px 3px #1c2321;
 }
-
 body #card #prix {
   text-shadow: 0 1px 2px #1c2321;
   margin: 0.2rem;
 }
-
 body #card #description {
   text-shadow: 0 1px 2px #1c2321;
   margin: 0.5rem;
+  display: inline-block;
+  width: 14rem;
+  height: 2em;
+  line-height: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: break-word;
 }
-
+body #card #panierEtPlus {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 body #card .enSavoirPlus {
+  margin: 0 0.5rem 0 0.5rem;
   text-decoration: none;
   color: black;
   align-self: flex-end;
@@ -149,69 +150,69 @@ body #card .enSavoirPlus {
   padding: 0.4rem;
   text-shadow: 0 1px 2px #1c2321;
 }
-
 body #card .enSavoirPlus:hover {
   text-decoration: underline;
 }
-
+body #card #ajouterPanier {
+  background: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-shadow: 0 1px 2px #1c2321;
+  box-shadow: 10px 5px 5px black;
+}
+body #card #ajouterPanier:hover {
+  background-color: #000000;
+  cursor: pointer;
+  color: white;
+}
 body #article {
-  margin: 0 auto;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   width: -moz-fit-content;
   width: fit-content;
 }
-
 body #article img {
   padding: 1rem;
   width: 15rem;
   border: #EEF1EF;
 }
-
 body #telephones img {
   padding: 1rem;
   width: 15rem;
   border: #EEF1EF;
 }
-
 body #objetsconnectes img {
   padding: 1rem;
   width: 15rem;
   border: #EEF1EF;
 }
-
 body #tablettes img {
   padding: 1rem;
   width: 15rem;
   border: #EEF1EF;
 }
-
 body footer * {
   display: inline;
 }
-
 body footer {
   background-color: #EEF1EF;
   height: -moz-fit-content;
   height: fit-content;
   box-shadow: 0 0 1.2rem 0 black;
 }
-
 body footer nav ul {
   display: flex;
   justify-content: center;
 }
-
 body footer nav ul img {
   height: 7rem;
 }
-
 body footer nav ul li {
   margin: 1.5rem;
   height: -moz-fit-content;
   height: fit-content;
 }
-
 body footer nav ul li a {
   width: 2rem;
   color: black;
@@ -249,10 +250,7 @@ body footer nav ul li a {
   border: rebeccapurple solid 1px;
   visibility: hidden;
 }
-
 #contenuPanier #cardPanier img {
   width: 3rem;
   height: 3rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
