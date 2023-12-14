@@ -294,3 +294,32 @@ body {
         }
     }
 }
+#panier {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    color: #fff; 
+    padding: 2rem;
+    border-radius: 50%; 
+    cursor: pointer;
+    font-size: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease; 
+  }
+  
+  #panier:hover {
+    background-color: #2980b9; 
+  }
+  #contenuPanier {
+    position: fixed;
+    bottom: 12.5rem;
+    right: 4rem;
+    background-color: red;
+    width: 8rem;
+    height: 10rem;
+    border: rebeccapurple solid 1px;
+    visibility: hidden;
+  }

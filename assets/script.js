@@ -85,3 +85,10 @@ btnTab.addEventListener("click", function () {
   });
 
 });
+
+let panier = document.getElementById("panier")
+
+panier.addEventListener('click',function(){
+    
+}
+)
