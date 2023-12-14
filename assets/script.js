@@ -21,7 +21,7 @@ fetch("../assets/data/data.json")
       <img src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
       <h1 id="marque">${globalData[i].marque}</h1>
       <h2 id="nomArticle">${globalData[i].nom}</h2>
-      <h3 id="prix">${globalData[i].prix}$</h3>
+      <h3 id="prix">${globalData[i].prix}€</h3>
       <h4 id="description">${globalData[i].description}</h4>
       <a class="enSavoirPlus" href="#">Plus</a>
   

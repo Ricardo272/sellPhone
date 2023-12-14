@@ -1,0 +1,16 @@
+SELECT
+    `Nom Article` AS `nom`,
+    `ref_article` AS `ref`,
+    `prix_art` AS `prix`,
+    `description_article` AS `description` ,
+    `img_article` AS `image`,
+    `stock_dispo` AS `stock`,
+    `type_cat`AS `catArticle`,
+    `NOM_MARQUE` AS `marque`,
+    AVG(`id_note`) AS `note`
+FROM
+    `article`
+    NATURAL JOIN `categorie`
+    NATURAL JOIN `marque`
+    LEFT JOIN `avis` ON `avis`.`id_article`= `article`.`id_article`
+    GROUP BY `nom`
