@@ -317,9 +317,16 @@ body {
     position: fixed;
     bottom: 12.5rem;
     right: 4rem;
-    background-color: red;
-    width: 8rem;
-    height: 10rem;
+    background-color: #000;
+    color: #fff;
+    max-width: 8rem;
+    opacity: .5;
     border: rebeccapurple solid 1px;
     visibility: hidden;
+    #cardPanier {
+        img {
+       width : 3rem;
+       height: 3rem;
+    }
+}
   }

@@ -18,11 +18,12 @@ fetch("../assets/data/data.json")
       article.innerHTML += `
       <div id="card">
 
-      <img src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
+      <img id="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
       <h1 id="marque">${globalData[i].marque}</h1>
       <h2 id="nomArticle">${globalData[i].nom}</h2>
-      <h3 id="prix">${globalData[i].prix}€</h3>
+      <h3 id="prixArticle">${globalData[i].prix}€</h3>
       <h4 id="description">${globalData[i].description}</h4>
+      <br><button id="ajouterPanier">Ajouter au panier</button>
       <a class="enSavoirPlus" href="#">Plus</a>
   
     </div>
@@ -86,9 +87,41 @@ btnTab.addEventListener("click", function () {
 
 });
 
-let panier = document.getElementById("panier")
 
-panier.addEventListener('click',function(){
+// AFFICHAGE PANIER
+
+let panier = document.getElementById("panier");
+let contenuPanier = document.getElementById("contenuPanier");
+
+panier.addEventListener('click', function (event) {
+    event.stopPropagation();
     
-}
-)
+    contenuPanier.style.visibility = 'visible';
+});
+
+document.addEventListener('click', function () {
+    if (contenuPanier.style.visibility === 'visible') {
+        contenuPanier.style.visibility = 'hidden';
+    }
+});
+
+//BOUTTON AJOUTER
+
+document.addEventListener('click', function(event) {
+    if (event.target.id === 'ajouterPanier') {
+        let articleContainer = event.target.closest('#card');
+
+        // Récupérer le nom de l'article à partir du conteneur
+        let articleNom = articleContainer.querySelector('#nomArticle').innerText;
+        let articlePhoto = articleContainer.querySelector('#photoArticle').getAttribute('src');
+let articlePrix = articleContainer.querySelector('#prixArticle').innerText;
+        // Faites ce que vous voulez avec le nom de l'article (afficher dans contenuPanier, etc.)
+        contenuPanier.innerHTML += `<div id="cardPanier">
+        <img src="${articlePhoto}" alt="${articleNom}">
+           ${articleNom}
+          ${articlePrix}
+          </div>
+        `;
+    }
+});
+
