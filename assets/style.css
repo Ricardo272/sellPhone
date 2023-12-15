@@ -223,9 +223,7 @@ body footer nav ul li a {
   position: fixed;
   bottom: 4rem;
   right: 4rem;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 2rem;
   border-radius: 50%;
@@ -243,12 +241,14 @@ body footer nav ul li a {
   position: fixed;
   bottom: 12.5rem;
   right: 4rem;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   max-width: 8rem;
-  opacity: 0.5;
   border: rebeccapurple solid 1px;
   visibility: hidden;
+}
+#contenuPanier #cardPanier {
+  border: solid 1.5px gray;
 }
 #contenuPanier #cardPanier img {
   width: 3rem;

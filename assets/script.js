@@ -156,7 +156,7 @@ document.addEventListener('click', function (event) {
     contenuPanier.innerHTML += `<div id="cardPanier">
         <img src="${articlePhoto}" alt="${articleNom}">
            ${articleNom}
-          ${articlePrix}
+          Prix : ${articlePrix}
           </div>
         `;
   }
