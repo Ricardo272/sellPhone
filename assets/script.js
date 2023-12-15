@@ -136,13 +136,19 @@ panier.addEventListener('click', function (event) {
   contenuPanier.style.visibility = 'visible';
 });
 
-document.addEventListener('click', function () {
+document.addEventListener('click', function (event) {
   if (contenuPanier.style.visibility === 'visible') {
-    contenuPanier.style.visibility = 'hidden';
+      // Vérifiez si l'élément cliqué est à l'intérieur de la div contenuPanier
+      if (!contenuPanier.contains(event.target)) {
+          contenuPanier.style.visibility = 'hidden';
+      }
   }
 });
 
+
 //BOUTTON AJOUTER
+
+let moinsbtn, plusbtn, quantitySpan; // Déclarer les variables à un niveau plus global
 
 document.addEventListener('click', function (event) {
   if (event.target.id === 'ajouterPanier') {
@@ -152,14 +158,50 @@ document.addEventListener('click', function (event) {
     let articleNom = articleContainer.querySelector('#nomArticle').innerText;
     let articlePhoto = articleContainer.querySelector('#photoArticle').getAttribute('src');
     let articlePrix = articleContainer.querySelector('#prixArticle').innerText;
-    // Faites ce que vous voulez avec le nom de l'article (afficher dans contenuPanier, etc.)
+
+    // Ajouter le nouvel article au panier
     contenuPanier.innerHTML += `<div id="cardPanier">
         <img src="${articlePhoto}" alt="${articleNom}">
-           ${articleNom}
-          Prix : ${articlePrix}
-          </div>
-        `;
+        ${articleNom}
+        Prix : ${articlePrix}
+        <div class="quantity">
+          <button class="moinsbtn" data-action="decrease">-</button>
+          <span class="quantitySpan">1</span>
+          <button class="plusbtn" data-action="increase">+</button>
+        </div>
+      </div>`;
+
+    // Sélectionner le dernier élément ajouté au panier
+    let cardPanier = contenuPanier.lastElementChild;
+
+    // Sélectionner les boutons et le span spécifiques à l'article ajouté
+    let moinsbtn = cardPanier.querySelector('.moinsbtn');
+    let plusbtn = cardPanier.querySelector('.plusbtn');
+    let quantitySpan = cardPanier.querySelector('.quantitySpan');
+
+    // Ajouter des écouteurs d'événements aux boutons
+    moinsbtn.addEventListener('click', function () {
+      updateQuantity('decrease', quantitySpan);
+    });
+
+    plusbtn.addEventListener('click', function () {
+      updateQuantity('increase', quantitySpan);
+    });
   }
 });
 
+function updateQuantity(action, quantitySpan) {
+  let currentQuantity = parseInt(quantitySpan.innerText);
 
+  if (action === 'increase') {
+    quantitySpan.innerText = currentQuantity + 1;
+  } else if (action === 'decrease' && currentQuantity > 1) {
+    quantitySpan.innerText = currentQuantity - 1;
+  }
+
+  // Supprimer l'article du panier si la quantité atteint 0
+  if (parseInt(quantitySpan.innerText) <= 0) {
+    let cardPanier = quantitySpan.closest('#cardPanier');
+    cardPanier.remove();
+  }
+}
