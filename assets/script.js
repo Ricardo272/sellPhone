@@ -18,14 +18,15 @@ fetch("../assets/data/data.json")
       article.innerHTML += `
       <div id="card">
 
-            <img id="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
-            <h1 id="marque">${globalData[i].marque}</h1>
-            <h2 id="nomArticle">${globalData[i].nom}</h2>
-            <h3 id="prixArticle">${globalData[i].prix}€</h3>
-            <h4 id="description">${globalData[i].description}</h4>
-            <div id="panierEtPlus">
+            <img class="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
+            <h1 class="marque">${globalData[i].marque}</h1>
+            <h2 class="nomArticle">${globalData[i].nom}</h2>
+            <h3 class="prixArticle">${globalData[i].prix}€</h3>
+            <h4 class="description">${globalData[i].description}</h4>
+            <div class="panierEtPlus">
             <a class="enSavoirPlus" href="#">Plus</a>
-            <button id="ajouterPanier">Ajouter au panier</button>
+            <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+
             </div>
            </div>
 
@@ -45,15 +46,17 @@ btnTel.addEventListener("click", function () {
           telephones.innerHTML += `
           <div id="card">
 
-            <img id="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
-            <h1 id="marque">${globalData[i].marque}</h1>
-            <h2 id="nomArticle">${globalData[i].nom}</h2>
-            <h3 id="prixArticle">${globalData[i].prix}€</h3>
-            <h4 id="description">${globalData[i].description}</h4>
-            <div id="panierEtPlus">
-            <a class="enSavoirPlus" href="#">Plus</a>
-            <button id="ajouterPanier">Ajouter au panier</button>
-            </div>
+          <img class="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
+          <h1 class="marque">${globalData[i].marque}</h1>
+          <h2 class="nomArticle">${globalData[i].nom}</h2>
+          <h3 class="prixArticle">${globalData[i].prix}€</h3>
+          <h4 class="description">${globalData[i].description}</h4>
+          <div class="panierEtPlus">
+          <a class="enSavoirPlus" href="#">Plus</a>
+          <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+
+          </div>
+         </div>
             
            </div>
                 `;
@@ -74,17 +77,17 @@ btnTab.addEventListener("click", function () {
           tablettes.innerHTML += `
           <div id="card">
 
-            <img id="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
-            <h1 id="marque">${globalData[i].marque}</h1>
-            <h2 id="nomArticle">${globalData[i].nom}</h2>
-            <h3 id="prixArticle">${globalData[i].prix}€</h3>
-            <h4 id="description">${globalData[i].description}</h4>
-            <div id="panierEtPlus">
-            <a class="enSavoirPlus" href="#">Plus</a>
-            <button id="ajouterPanier">Ajouter au panier</button>
-            </div>
-            
-           </div>
+          <img class="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
+          <h1 class="marque">${globalData[i].marque}</h1>
+          <h2 class="nomArticle">${globalData[i].nom}</h2>
+          <h3 class="prixArticle">${globalData[i].prix}€</h3>
+          <h4 class="description">${globalData[i].description}</h4>
+          <div class="panierEtPlus">
+          <a class="enSavoirPlus" href="#">Plus</a>
+          <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+
+          </div>
+         </div>
               `;
         }
         article.innerHTML = ""
@@ -102,16 +105,16 @@ btnTab.addEventListener("click", function () {
             objetsconnectes.innerHTML += `
             <div id="card">
 
-            <img id="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
-            <h1 id="marque">${globalData[i].marque}</h1>
-            <h2 id="nomArticle">${globalData[i].nom}</h2>
-            <h3 id="prixArticle">${globalData[i].prix}€</h3>
-            <h4 id="description">${globalData[i].description}</h4>
-            <div id="panierEtPlus">
+            <img class="photoArticle" src="${cheminImgArticle}${globalData[i].image}" alt="${globalData[i].nom}">
+            <h1 class="marque">${globalData[i].marque}</h1>
+            <h2 class="nomArticle">${globalData[i].nom}</h2>
+            <h3 class="prixArticle">${globalData[i].prix}€</h3>
+            <h4 class="description">${globalData[i].description}</h4>
+            <div class="panierEtPlus">
             <a class="enSavoirPlus" href="#">Plus</a>
-            <button id="ajouterPanier">Ajouter au panier</button>
+            <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+
             </div>
-            
            </div>
                     `;
           }
@@ -124,84 +127,139 @@ btnTab.addEventListener("click", function () {
 
 });
 
+let panier = [];
 
-// AFFICHAGE PANIER
+function ajouterAuPanier(articleElement) {
+  let nom = articleElement.querySelector('.nomArticle').innerText;
+  let prix = parseFloat(articleElement.querySelector('.prixArticle').innerText); // Convertir le prix en nombre
 
-let panier = document.getElementById("panier");
-let contenuPanier = document.getElementById("contenuPanier");
+  let articleToAdd = {
+    nom: nom,
+    prix: prix,
+    quantite: 1
+  };
 
-panier.addEventListener('click', function (event) {
-  event.stopPropagation();
+  let existingItemIndex = panier.findIndex(item => item.nom === articleToAdd.nom);
 
-  contenuPanier.style.visibility = 'visible';
-});
-
-document.addEventListener('click', function (event) {
-  if (contenuPanier.style.visibility === 'visible') {
-      // Vérifiez si l'élément cliqué est à l'intérieur de la div contenuPanier
-      if (!contenuPanier.contains(event.target)) {
-          contenuPanier.style.visibility = 'hidden';
-      }
-  }
-});
-
-
-//BOUTTON AJOUTER
-let total = 0;
-let moinsbtn, plusbtn, quantitySpan; // Déclarer les variables à un niveau plus global
-
-document.addEventListener('click', function (event) {
-  if (event.target.id === 'ajouterPanier') {
-    let articleContainer = event.target.closest('#card');
-
-    // Récupérer le nom de l'article à partir du conteneur
-    let articleNom = articleContainer.querySelector('#nomArticle').innerText;
-    let articlePhoto = articleContainer.querySelector('#photoArticle').getAttribute('src');
-    let articlePrix = articleContainer.querySelector('#prixArticle').innerText;
-
-    // Ajouter le nouvel article au panier
-    contenuPanier.innerHTML += `<div id="cardPanier">
-        <img src="${articlePhoto}" alt="${articleNom}">
-        ${articleNom}
-        Prix : ${articlePrix}
-        <div class="quantity">
-          <button class="moinsbtn" data-action="decrease">-</button>
-          <span class="quantitySpan">1</span>
-          <button class="plusbtn" data-action="increase">+</button>
-        </div>
-      </div>`;
-
-    // Sélectionner le dernier élément ajouté au panier
-    let cardPanier = contenuPanier.lastElementChild;
-
-    // Sélectionner les boutons et le span spécifiques à l'article ajouté
-    let moinsbtn = cardPanier.querySelector('.moinsbtn');
-    let plusbtn = cardPanier.querySelector('.plusbtn');
-    let quantitySpan = cardPanier.querySelector('.quantitySpan');
-
-    // Ajouter des écouteurs d'événements aux boutons
-    moinsbtn.addEventListener('click', function () {
-      updateQuantity('decrease', quantitySpan);
-    });
-
-    plusbtn.addEventListener('click', function () {
-      updateQuantity('increase', quantitySpan);
-    });
-  }
-});
-
-function updateQuantity(action, quantitySpan) {
-  let currentQuantity = parseInt(quantitySpan.innerText);
-
-  if (action === 'increase') {
-    quantitySpan.innerText = currentQuantity + 1;
-  } else if (action === 'decrease' && currentQuantity > 1) {
-    quantitySpan.innerText = currentQuantity - 1;
+  if (existingItemIndex !== -1) {
+    panier[existingItemIndex].quantite++;
+  } else {
+    panier.push(articleToAdd);
   }
 
-  // Supprimer l'article du panier si la quantité atteint 0
-  if (parseInt(quantitySpan.innerText) <= 0) {
-    let cardPanier = quantitySpan.closest('#cardPanier');
-    cardPanier.remove();
+  afficherArticlesDansPanier();
+}
+
+
+function afficherArticlesDansPanier() {
+  let panierHTML = '';
+  let total = 0;
+
+  for (let article of panier) {
+    panierHTML += `
+    <div class="articlePanier">
+    <p class="nomArticlePanier">${article.nom}</p>
+    <p class="prixArticlePanier">${article.prix}€</p>
+    <div class="quantiteActions">
+        <button class="modifierQuantite" onclick="diminuerQuantite('${article.nom}')"><i class="bi bi-dash-circle-fill"></i></button>
+        <p class="quantiteArticlePanier">${article.quantite}</p>
+        <button class="modifierQuantite" onclick="augmenterQuantite('${article.nom}')"><i class="bi bi-plus-circle-fill"></i></button>
+    </div>
+    <button class="supprimerDuPanier" type="button" onclick="supprimerArticleDuPanier('${article.nom}')"><i class="bi bi-trash3-fill"></i></button>
+</div>
+    `;
+
+    total += article.prix * article.quantite;
+  }
+
+  let panierContainer = document.querySelector('.listDesArticlePanier');
+  panierContainer.innerHTML = panierHTML;
+
+  let totalPanier = document.querySelector('.totalPanier');
+  totalPanier.textContent = `Total : ${total}€`;
+}
+function supprimerArticleDuPanier(nomArticle) {
+  // Filtrer l'article à supprimer du panier
+  panier = panier.filter(article => article.nom !== nomArticle);
+  // Mettre à jour l'affichage du panier après suppression
+  afficherArticlesDansPanier();
+}
+
+function augmenterQuantite(nomArticle) {
+  let article = panier.find(item => item.nom === nomArticle);
+  if (article) {
+    article.quantite++;
+    afficherArticlesDansPanier();
   }
 }
+
+function diminuerQuantite(nomArticle) {
+  let article = panier.find(item => item.nom === nomArticle);
+  if (article && article.quantite > 1) {
+    article.quantite--;
+    afficherArticlesDansPanier();
+  }
+}
+
+
+// Récupération de l'élément du panier
+const panierContent = document.getElementById('panierContent');
+const panierLink = document.getElementById('panier');
+
+// Écouteur d'événement sur le clic du bouton "Panier"
+panierLink.addEventListener('click', function (event) {
+  event.stopPropagation(); // Empêche la propagation du clic à la page
+
+  // Vérifie si le panier est actuellement visible ou non
+  const isVisible = window.getComputedStyle(panierContent).display !== 'none';
+
+  // Affiche ou cache le panier en fonction de son état actuel
+  if (isVisible) {
+    panierContent.style.display = 'none';
+  } else {
+    panierContent.style.display = 'block';
+  }
+});
+
+// Écouteur d'événement sur le clic sur la page pour cacher le panier
+document.addEventListener('click', function () {
+  panierContent.style.display = 'none';
+});
+
+// Fonction pour afficher les articles en fonction des données fournies
+function displayArticles(data) {
+  article.innerHTML = ''; // Efface le contenu actuel de la section "article"
+
+  data.forEach(item => {
+    article.innerHTML += `
+      <div id="card">
+        <img class="photoArticle" src="${cheminImgArticle}${item.image}" alt="${item.nom}">
+        <h1 class="marque">${item.marque}</h1>
+        <h2 class="nomArticle">${item.nom}</h2>
+        <h3 class="prixArticle">${item.prix}€</h3>
+        <h4 class="description">${item.description}</h4>
+        <div class="panierEtPlus">
+          <a class="enSavoirPlus" href="#">Plus</a>
+          <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+        </div>
+      </div>`;
+  });
+}
+
+// Fonction pour effectuer la recherche dans les données JSON
+function searchInData(searchTerm) {
+  const filteredData = globalData.filter(item => {
+    const lowercaseName = item.nom.toLowerCase();
+    const lowercaseDescription = item.description.toLowerCase();
+    return lowercaseName.includes(searchTerm) || lowercaseDescription.includes(searchTerm);
+  });
+
+  displayArticles(filteredData); // Affiche les résultats de la recherche
+}
+
+// Écouteur d'événement pour la soumission du formulaire de recherche
+searchForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Empêche la soumission par défaut du formulaire
+  const searchTerm = document.getElementById('searchbar').value.trim().toLowerCase();
+  searchInData(searchTerm); // Appelle la fonction de recherche avec le terme saisi
+});
