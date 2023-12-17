@@ -161,11 +161,11 @@ function afficherArticlesDansPanier() {
     <p class="nomArticlePanier">${article.nom}</p>
     <p class="prixArticlePanier">${article.prix}€</p>
     <div class="quantiteActions">
-        <button class="modifierQuantite" onclick="diminuerQuantite('${article.nom}')">-</button>
+        <button class="modifierQuantite" onclick="diminuerQuantite('${article.nom}')"><i class="bi bi-dash-circle-fill"></i></button>
         <p class="quantiteArticlePanier">${article.quantite}</p>
-        <button class="modifierQuantite" onclick="augmenterQuantite('${article.nom}')">+</button>
+        <button class="modifierQuantite" onclick="augmenterQuantite('${article.nom}')"><i class="bi bi-plus-circle-fill"></i></button>
     </div>
-    <button class="supprimerDuPanier" type="button" onclick="supprimerArticleDuPanier('${article.nom}')">Supprimer du Panier</button>
+    <button class="supprimerDuPanier" type="button" onclick="supprimerArticleDuPanier('${article.nom}')"><i class="bi bi-trash3-fill"></i></button>
 </div>
     `;
 
@@ -200,3 +200,66 @@ function diminuerQuantite(nomArticle) {
     afficherArticlesDansPanier();
   }
 }
+
+
+// Récupération de l'élément du panier
+const panierContent = document.getElementById('panierContent');
+const panierLink = document.getElementById('panier');
+
+// Écouteur d'événement sur le clic du bouton "Panier"
+panierLink.addEventListener('click', function (event) {
+  event.stopPropagation(); // Empêche la propagation du clic à la page
+
+  // Vérifie si le panier est actuellement visible ou non
+  const isVisible = window.getComputedStyle(panierContent).display !== 'none';
+
+  // Affiche ou cache le panier en fonction de son état actuel
+  if (isVisible) {
+    panierContent.style.display = 'none';
+  } else {
+    panierContent.style.display = 'block';
+  }
+});
+
+// Écouteur d'événement sur le clic sur la page pour cacher le panier
+document.addEventListener('click', function () {
+  panierContent.style.display = 'none';
+});
+
+// Fonction pour afficher les articles en fonction des données fournies
+function displayArticles(data) {
+  article.innerHTML = ''; // Efface le contenu actuel de la section "article"
+
+  data.forEach(item => {
+    article.innerHTML += `
+      <div id="card">
+        <img class="photoArticle" src="${cheminImgArticle}${item.image}" alt="${item.nom}">
+        <h1 class="marque">${item.marque}</h1>
+        <h2 class="nomArticle">${item.nom}</h2>
+        <h3 class="prixArticle">${item.prix}€</h3>
+        <h4 class="description">${item.description}</h4>
+        <div class="panierEtPlus">
+          <a class="enSavoirPlus" href="#">Plus</a>
+          <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
+        </div>
+      </div>`;
+  });
+}
+
+// Fonction pour effectuer la recherche dans les données JSON
+function searchInData(searchTerm) {
+  const filteredData = globalData.filter(item => {
+    const lowercaseName = item.nom.toLowerCase();
+    const lowercaseDescription = item.description.toLowerCase();
+    return lowercaseName.includes(searchTerm) || lowercaseDescription.includes(searchTerm);
+  });
+
+  displayArticles(filteredData); // Affiche les résultats de la recherche
+}
+
+// Écouteur d'événement pour la soumission du formulaire de recherche
+searchForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Empêche la soumission par défaut du formulaire
+  const searchTerm = document.getElementById('searchbar').value.trim().toLowerCase();
+  searchInData(searchTerm); // Appelle la fonction de recherche avec le terme saisi
+});

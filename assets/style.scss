@@ -1,10 +1,15 @@
 body {
+    background-color: wheat;
     background-size: cover;
     font-family: sans-serif;
     font-size: 1.5rem;
 
     header * {
-        display: inline;
+        display: flex;
+        flex-direction: row;
+        text-shadow: 0 3px 3px #1c2321;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     header {
@@ -24,13 +29,13 @@ body {
         border-radius: 2rem;
 
         #logo {
-            width: fit-content;
             border: none;
+            border-radius: 1rem;
 
             .logo {
-                margin-left: 2.5rem;
-                height: 7rem;
-
+                height: 8rem;
+                border-radius: 3rem;
+                padding: .2rem;
 
             }
         }
@@ -95,6 +100,64 @@ body {
                 color: white;
             }
         }
+
+
+    }
+
+    .panier {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-shadow: 0 3px 3px #1c2321;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 2rem;
+        background-color: #413b3b9c;
+        position: fixed;
+        right: 0;
+
+
+        button {
+            width: 1.5rem;
+            border: none;
+            background: none;
+            border-radius: 2rem;
+            margin: .25rem;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #panier {
+            color: #000000;
+            text-decoration: none;
+            padding: .25rem;
+            margin: 0;
+            width: fit-content;
+        }
+
+        p {
+            padding: .25rem;
+            margin: 0;
+            width: fit-content;
+        }
+
+        .listDesArticlePanier {
+            .articlePanier {
+                display: flex;
+                flex-direction: row;
+                width: fit-content;
+                align-items: center;
+            }
+        }
+
+        .quantiteActions {
+            background: none;
+            display: flex;
+            align-items: center;
+        }
     }
 
     #card:hover {
@@ -116,6 +179,18 @@ body {
         transition: transform 0.5s ease;
         justify-content: space-between;
 
+        .description {
+            text-shadow: 0 1px 2px #1c2321;
+            margin: .5rem;
+            display: inline-block;
+            width: 14rem;
+            height: 2em;
+            line-height: 1em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow-wrap: break-word;
+        }
 
         .photoArticle {
             padding: 1rem;
@@ -136,23 +211,12 @@ body {
             text-shadow: 0 3px 3px #1c2321;
         }
 
-        .prix {
+        .prixArticle {
             text-shadow: 0 1px 2px #1c2321;
             margin: .2rem;
         }
 
-        #description {
-            text-shadow: 0 1px 2px #1c2321;
-            margin: .5rem;
-            display: inline-block;
-            width: 14rem;
-            height: 2em;
-            line-height: 1em;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow-wrap: break-word;
-        }
+
 
         .panierEtPlus {
             display: flex;
@@ -207,6 +271,12 @@ body {
     }
 
     #telephones {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        width: -moz-fit-content;
+        width: fit-content;
+
         img {
             padding: 1rem;
             width: 15rem;
@@ -215,6 +285,12 @@ body {
     }
 
     #objetsconnectes {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        width: -moz-fit-content;
+        width: fit-content;
+
         img {
             padding: 1rem;
             width: 15rem;
@@ -223,6 +299,12 @@ body {
     }
 
     #tablettes {
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        width: -moz-fit-content;
+        width: fit-content;
+
         img {
             padding: 1rem;
             width: 15rem;

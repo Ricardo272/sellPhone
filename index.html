@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
   <title>Sell phone</title>
 </head>
 
@@ -35,18 +36,30 @@
           </a>
         </li>
       </ul>
-
     </nav>
-    <div class="navbar">
-      <label for="searchbar"></label>
-      <input id="searchbar" type="text" placeholder="Rechercher">
 
-      <button id="btnSearch">
-        GO!
-      </button>
-      </nav>
+    <div class="navbar">
+
+      <form id="searchForm">
+        <label for="searchbar"></label>
+        <input id="searchbar" type="text" placeholder="Rechercher">
+        <button id="btnSearch" type="submit">
+          GO!
+        </button>
+      </form>
+
+    </div>
+
+
   </header>
 
+  <div class="panier">
+    <a id="panier" href="#">Panier <i class="bi bi-cart-check-fill"></i></a>
+    <div class="listDesArticlePanier" id="panierContent">
+
+    </div>
+    <p class="totalPanier"></p>
+  </div>
 
   <div id="article"></div>
   <div id="telephones"></div>
@@ -55,23 +68,6 @@
 
 
 
-  <div class="panier">
-    <div class="listDesArticlePanier">
-      <!-- <div class="articlePanier">
-        <p class="nomArticlePanier">${article.nom}</p>
-        <p class="prixArticlePanier">${article.prix}€</p>
-        <div class="quantiteActions">
-          <button class="modifierQuantite" onclick="diminuerQuantite('${article.nom}')">-</button>
-          <p class="quantiteArticlePanier">${article.quantite}</p>
-          <button class="modifierQuantite" onclick="augmenterQuantite('${article.nom}')">+</button>
-        </div>
-        <button class="supprimerDuPanier" type="button" onclick="supprimerArticleDuPanier('${article.nom}')">Supprimer
-          du Panier</button>
-      </div> -->
-    </div>
-    <p class="totalPanier"></p>
-
-  </div>
 
 
 
