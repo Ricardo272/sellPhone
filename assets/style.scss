@@ -117,13 +117,13 @@ body {
         justify-content: space-between;
 
 
-        #photoArticle {
+        .photoArticle {
             padding: 1rem;
             width: 10rem;
             height: 16rem;
         }
 
-        #marque {
+        .marque {
             font-size: 1.5rem;
             border-radius: 1rem;
             padding: .4rem;
@@ -131,12 +131,12 @@ body {
             text-shadow: 0 3px 3px #1c2321;
         }
 
-        #nomArticle {
+        .nomArticle {
             margin: .8rem;
             text-shadow: 0 3px 3px #1c2321;
         }
 
-        #prix {
+        .prix {
             text-shadow: 0 1px 2px #1c2321;
             margin: .2rem;
         }
@@ -154,7 +154,7 @@ body {
             overflow-wrap: break-word;
         }
 
-        #panierEtPlus {
+        .panierEtPlus {
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
@@ -175,7 +175,7 @@ body {
             text-decoration: underline;
         }
 
-        #ajouterPanier {
+        .ajouterPanier {
             background: none;
             border-radius: 1rem;
             padding: .5rem;
@@ -184,7 +184,7 @@ body {
 
         }
 
-        #ajouterPanier:hover {
+        .ajouterPanier:hover {
             background-color: #000000;
             cursor: pointer;
             color: white;
@@ -268,42 +268,5 @@ body {
                 }
             }
         }
-    }
-}
-
-#panier {
-    position: fixed;
-    bottom: 4rem;
-    right: 4rem;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    padding: 2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 4rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-}
-
-#panier:hover {
-    background-color: #2980b9;
-}
-
-#contenuPanier {
-    position: fixed;
-    bottom: 12.5rem;
-    right: 4rem;
-    background-color: rgba(0,0,0,.5);
-    color: #fff;
-    max-width: 8rem;
-    border: rebeccapurple solid 1px;
-    visibility: hidden;
-
-    #cardPanier {
-        img {
-            width: 3rem;
-            height: 3rem;
-        }
-        border: solid 1.5px gray;
     }
 }

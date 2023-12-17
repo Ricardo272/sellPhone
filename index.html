@@ -48,20 +48,6 @@
   </header>
 
 
-
-  <!-- <div id="card">
-
-    <img src="assets/img/001.jpg" alt="">
-    <h1 id="marque">Apple</h1>
-    <h2 id="nomArticle">IPhone 11</h2>
-    <h3 id="prix">999$</h3>
-    <h4 id="description">Taille de l'ecran : 6.5 Pouces</h4>
-    <a class="enSavoirPlus" href="#">Plus</a>
-
-  </div> -->
-
-
-
   <div id="article"></div>
   <div id="telephones"></div>
   <div id="tablettes"></div>
@@ -69,14 +55,31 @@
 
 
 
-  <div id="contenuPanier"></div>
-  <div id="panier"><i class="bi bi-cart4"></i></div>
+  <div class="panier">
+    <div class="listDesArticlePanier">
+      <!-- <div class="articlePanier">
+        <p class="nomArticlePanier">${article.nom}</p>
+        <p class="prixArticlePanier">${article.prix}€</p>
+        <div class="quantiteActions">
+          <button class="modifierQuantite" onclick="diminuerQuantite('${article.nom}')">-</button>
+          <p class="quantiteArticlePanier">${article.quantite}</p>
+          <button class="modifierQuantite" onclick="augmenterQuantite('${article.nom}')">+</button>
+        </div>
+        <button class="supprimerDuPanier" type="button" onclick="supprimerArticleDuPanier('${article.nom}')">Supprimer
+          du Panier</button>
+      </div> -->
+    </div>
+    <p class="totalPanier"></p>
+
+  </div>
+
+
 
   <footer>
     <nav>
       <ul>
         <a href="index.html">
-          <img class="logo" src="./assets/img/logo.png">
+          <img class="logo" src="./assets/img/logo/Phone_Store__1_-removebg-preview.png">
         </a>
         <li><a href="#">About</a></li>
         <li><a href="#">Pricing</a></li>
