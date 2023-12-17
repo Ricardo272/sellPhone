@@ -147,7 +147,7 @@ document.addEventListener('click', function (event) {
 
 
 //BOUTTON AJOUTER
-
+let total = 0;
 let moinsbtn, plusbtn, quantitySpan; // Déclarer les variables à un niveau plus global
 
 document.addEventListener('click', function (event) {
