@@ -24,7 +24,7 @@ fetch("../assets/data/data.json")
             <h3 class="prixArticle">${globalData[i].prix}€</h3>
             <h4 class="description">${globalData[i].description}</h4>
             <div class="panierEtPlus">
-            <a class="enSavoirPlus" href="#">Plus</a>
+            <a class="enSavoirPlus" href="../details.html">Plus</a>
             <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
 
             </div>
@@ -52,7 +52,7 @@ btnTel.addEventListener("click", function () {
           <h3 class="prixArticle">${globalData[i].prix}€</h3>
           <h4 class="description">${globalData[i].description}</h4>
           <div class="panierEtPlus">
-          <a class="enSavoirPlus" href="#">Plus</a>
+          <a class="enSavoirPlus" href="../details.html">Plus</a>
           <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
 
           </div>
@@ -83,7 +83,7 @@ btnTab.addEventListener("click", function () {
           <h3 class="prixArticle">${globalData[i].prix}€</h3>
           <h4 class="description">${globalData[i].description}</h4>
           <div class="panierEtPlus">
-          <a class="enSavoirPlus" href="#">Plus</a>
+          <a class="enSavoirPlus" href="../details.html">Plus</a>
           <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
 
           </div>
@@ -111,7 +111,7 @@ btnTab.addEventListener("click", function () {
             <h3 class="prixArticle">${globalData[i].prix}€</h3>
             <h4 class="description">${globalData[i].description}</h4>
             <div class="panierEtPlus">
-            <a class="enSavoirPlus" href="#">Plus</a>
+            <a class="enSavoirPlus" href="../details.html">Plus</a>
             <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
 
             </div>
@@ -239,7 +239,7 @@ function displayArticles(data) {
         <h3 class="prixArticle">${item.prix}€</h3>
         <h4 class="description">${item.description}</h4>
         <div class="panierEtPlus">
-          <a class="enSavoirPlus" href="#">Plus</a>
+          <a class="enSavoirPlus" href="../details.html">Plus</a>
           <button class="ajouterPanier" onclick="ajouterAuPanier(this.parentElement.parentElement)">Ajouter au panier</button>
         </div>
       </div>`;
