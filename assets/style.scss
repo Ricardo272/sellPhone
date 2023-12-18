@@ -105,7 +105,7 @@ body {
     }
 
     .panier {
-        width: 20rem;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
@@ -138,18 +138,29 @@ body {
             width: fit-content;
         }
 
-        p {
+        .totalPanier {
             padding: .25rem;
             margin: 0;
             width: fit-content;
+        }
+
+        p {
+            padding: 0.25rem;
+            margin: 0;
+            width: -moz-fit-content;
+            width: 10rem;
+            display: flex;
+            flex-direction: row;
+            line-height: 1em;
+            height: 1em;
+            overflow: overlay;
         }
 
         .listDesArticlePanier {
             .articlePanier {
                 display: flex;
                 flex-direction: row;
-                width: fit-content;
-                align-items: center;
+                justify-content: space-between;
             }
         }
 
