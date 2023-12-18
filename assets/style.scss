@@ -352,3 +352,17 @@ body {
         }
     }
 }
+
+
+#cardDetails {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+background-color: #EEF1EF;
+    img {
+        width: 30rem;
+        height: 38rem;
+    }
+}
