@@ -363,3 +363,23 @@ body {
         }
     }
 }
+
+
+#cardDetails {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+background-color: #EEF1EF;
+align-items: center;
+width: 45rem;
+text-shadow: 0 3px 3px;
+box-shadow: 15px 10px 7px black;
+border-radius: 10px;
+
+    img {
+        width: 30rem;
+        height: 38rem;
+    }
+}
